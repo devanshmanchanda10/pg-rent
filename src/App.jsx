@@ -1,6 +1,6 @@
 import HomePage from "./routes/homePage/homePage";
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import ListPage from "./routes/listPage/listPage";
@@ -11,7 +11,7 @@ import Login from "./routes/login/login";
 import Register from "./routes/register/register";
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Layout />,
